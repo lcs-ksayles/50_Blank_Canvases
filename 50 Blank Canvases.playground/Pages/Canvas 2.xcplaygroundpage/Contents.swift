@@ -13,8 +13,24 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
-
+let canvas = Canvas(width: 500, height: 500)
+canvas.drawLine(fromX: 250, fromY: 50, toX: 290, toY: 90)
+canvas.drawLine(fromX: 250, fromY: 50, toX: 210, toY: 90)
+canvas.drawLine(fromX: 250, fromY: 450, toX: 290, toY: 410)
+canvas.drawLine(fromX: 250, fromY: 450, toX: 210, toY: 410)
+canvas.drawLine(fromX: 50, fromY: 250, toX: 90, toY: 210)
+canvas.drawLine(fromX: 450, fromY: 250, toX: 410, toY: 210)
+canvas.drawLine(fromX: 50, fromY: 250, toX: 90, toY: 290)
+canvas.drawLine(fromX: 450, fromY: 250, toX: 410, toY: 290)
+canvas.drawLine(fromX: 410, fromY: 290, toX: 410, toY: 410)
+canvas.drawLine(fromX: 410, fromY: 410, toX: 290, toY: 410)
+canvas.drawLine(fromX: 290, fromY: 90, toX: 410, toY: 90)
+canvas.drawLine(fromX: 410, fromY: 90, toX: 410, toY: 210 )
+canvas.drawLine(fromX: 210, fromY: 90, toX: 90, toY: 90)
+canvas.drawLine(fromX: 90, fromY: 90, toX: 90, toY: 210)
+canvas.drawLine(fromX: 90, fromY: 290, toX: 90, toY: 410)
+canvas.drawLine(fromX: 90, fromY: 410, toX: 210, toY: 410)
+canvas.drawLine(fromX: 210, fromY: 410 , toX: 210, toY: 290)
 /*:
  ## Add your code below
  

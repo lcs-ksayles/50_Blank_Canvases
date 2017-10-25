@@ -32,6 +32,8 @@ canvas.drawLine(fromX: 325, fromY: 230, toX: 275, toY: 230)
 canvas.drawLine(fromX: 175, fromY: 230, toX: 225, toY: 230)
 canvas.drawLine(fromX: 260, fromY: 230, toX: 275, toY: 230)
 canvas.drawLine(fromX: 240, fromY: 230, toX: 215, toY: 230)
+canvas.drawLine(fromX: 325, fromY: 230, toX: 430, toY: 250)
+canvas.drawLine(fromX: 430, fromY: 250, toX: 325, toY: 270)
 /*:
  ## Add your code below
  

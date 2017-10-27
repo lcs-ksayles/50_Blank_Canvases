@@ -13,7 +13,12 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 500, height: 500)
+canvas.translate(byX: 250, byY: 250)
+for i in stride(from: 1 , through: 50, by: 1){
+    canvas.drawLine(fromX: 170, fromY: i, toX: 170, toY: 170)
+    canvas.rotate(by: 90)
+}
 
 /*:
  ## Add your code below

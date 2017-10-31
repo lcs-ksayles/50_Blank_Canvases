@@ -13,8 +13,37 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 800, height: 600)
 
+canvas.translate(byX: 400, byY: 300)
+//Draw head
+canvas.fillColor = Color.red
+canvas.drawShapesWithBorders = true
+canvas.borderColor = Color.black
+canvas.defaultBorderWidth = 25
+canvas.drawEllipse(centreX: 0, centreY: -100, width: 270, height: 270)
+
+//Draw eyes
+canvas.fillColor = Color.init(hue: 80, saturation: 100, brightness: 80, alpha: 100)
+canvas.drawEllipse(centreX: 50,centreY: -80, width: 40, height: 70)
+
+//Draw other eye
+canvas.drawShapesWithFill = false
+canvas.drawEllipse(centreX: -50, centreY: -80, width: 70, height: 90)
+canvas.drawEllipse(centreX: -50, centreY: -80, width: 50, height: 60)
+canvas.borderColor = Color.white
+canvas.drawEllipse(centreX: -50, centreY: -80, width: 10, height: 10)
+
+//Draw Smile
+canvas.drawShapesWithFill = true
+canvas.fillColor = Color.white
+canvas.borderColor = Color.black
+canvas.drawRectangle(bottomLeftX: -10, bottomLeftY: -210, width: 30, height: 30)
+canvas.drawRectangle(bottomLeftX: -60, bottomLeftY: -200, width: 30, height: 40)
+canvas.drawRectangle(bottomLeftX: 40, bottomLeftY: -200, width: 30, height: 40)
+canvas.rotate(by: 50)
+canvas.drawAxes()
+canvas.drawRectangle(bottomLeftX: -70, bottomLeftY: -180, width: 30, height: 10)
 /*:
  ## Add your code below
  

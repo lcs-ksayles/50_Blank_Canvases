@@ -47,7 +47,10 @@ canvas.drawRectangle(bottomLeftX: -110, bottomLeftY: -160, width: 10, height:20)
 canvas.drawRectangle(bottomLeftX: 110, bottomLeftY: -155, width: 10, height:20)
 
 //Draw Hat
-canvas.drawRectangle(centreX: 0, centreY: 50, width: 200, height: 20)
+canvas.drawShapesWithFill = true
+canvas.fillColor = Color.black
+canvas.drawRectangle(centreX: 0, centreY: 30, width: 250, height: 30)
+canvas.drawRectangle(centreX: 0, centreY: 130, width: 130, height: 200)
 /*:
  ## Add your code below
  

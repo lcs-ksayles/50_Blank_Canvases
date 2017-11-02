@@ -38,12 +38,16 @@ canvas.drawEllipse(centreX: -50, centreY: -80, width: 10, height: 10)
 canvas.drawShapesWithFill = true
 canvas.fillColor = Color.white
 canvas.borderColor = Color.black
-canvas.drawRectangle(bottomLeftX: -10, bottomLeftY: -210, width: 30, height: 30)
+canvas.drawRectangle(bottomLeftX: -10, bottomLeftY: -205, width: 30, height: 40)
 canvas.drawRectangle(bottomLeftX: -60, bottomLeftY: -200, width: 30, height: 40)
 canvas.drawRectangle(bottomLeftX: 40, bottomLeftY: -200, width: 30, height: 40)
-canvas.rotate(by: 50)
-canvas.drawAxes()
-canvas.drawRectangle(bottomLeftX: -70, bottomLeftY: -180, width: 30, height: 10)
+canvas.drawRectangle(bottomLeftX: 85, bottomLeftY: -180, width: 10, height: 30)
+canvas.drawRectangle(bottomLeftX: -85, bottomLeftY: -180, width: 10, height: 30)
+canvas.drawRectangle(bottomLeftX: -110, bottomLeftY: -160, width: 10, height:20)
+canvas.drawRectangle(bottomLeftX: 110, bottomLeftY: -155, width: 10, height:20)
+
+//Draw Hat
+canvas.drawRectangle(centreX: 0, centreY: 50, width: 200, height: 20)
 /*:
  ## Add your code below
  

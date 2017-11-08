@@ -34,10 +34,26 @@ canvas.drawLine(fromX: 320, fromY: 280, toX: 385 , toY: 290)
 
 //Draw mouth
 canvas.drawShapesWithBorders = true
-canvas.drawShapesWithFill = false
-canvas.defaultBorderWidth=30
+canvas.drawShapesWithFill = true
+canvas.defaultBorderWidth=25
+canvas.borderColor = Color.green
+canvas.fillColor = Color.red
+canvas.drawEllipse(centreX: 250, centreY: 100, width: 200, height: 40)
 
+// Draw tears
+canvas.fillColor = Color.red
+canvas.drawShapesWithBorders = false
+canvas.drawEllipse(centreX: 390, centreY: 220, width: 10, height: 20)
+canvas.drawEllipse(centreX: 410, centreY: 200, width: 10, height: 20)
+canvas.drawEllipse(centreX: 420, centreY: 170, width: 10, height: 20)
+canvas.drawEllipse(centreX: 430, centreY: 140, width: 10, height: 20)
+canvas.drawEllipse(centreX: 450, centreY: 100, width: 10, height: 20)
 
+canvas.drawEllipse(centreX: 130, centreY: 220, width: 10, height: 20)
+canvas.drawEllipse(centreX: 110, centreY: 200, width: 10, height: 20)
+canvas.drawEllipse(centreX: 100, centreY: 170, width: 10, height: 20)
+canvas.drawEllipse(centreX: 90, centreY: 140, width: 10, height: 20)
+canvas.drawEllipse(centreX: 80, centreY: 100, width: 10, height: 20)
 /*:
  ## Add your code below
  

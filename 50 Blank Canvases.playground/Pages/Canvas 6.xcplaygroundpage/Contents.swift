@@ -13,7 +13,30 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 500, height: 500)
+canvas.fillColor = Color.black
+canvas.drawRectangle(centreX: 250, centreY: 250, width: 500, height: 500)
+
+//Draw eyes
+canvas.drawShapesWithBorders = false
+canvas.fillColor = Color.red
+canvas.drawEllipse(centreX: 150, centreY: 250, width: 70, height: 30)
+canvas.drawEllipse(centreX: 350, centreY: 250, width: 70, height: 30)
+canvas.fillColor = Color.green
+canvas.drawEllipse(centreX: 150, centreY: 250, width: 25, height: 13)
+canvas.drawEllipse(centreX: 350, centreY: 250, width: 25, height: 13)
+
+//Draw eyebrows
+canvas.lineColor = Color.green
+canvas.defaultLineWidth=7
+canvas.drawLine(fromX: 180, fromY: 280, toX: 115, toY: 290)
+canvas.drawLine(fromX: 320, fromY: 280, toX: 385 , toY: 290)
+
+//Draw mouth
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
+canvas.defaultBorderWidth=30
+
 
 /*:
  ## Add your code below
